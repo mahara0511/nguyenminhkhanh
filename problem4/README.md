@@ -15,14 +15,12 @@ npm install
 ```bash
 npx ts-node src/index.ts
 
-### 3. Expected Output
-
 ```
 
+### 3. Expect Output
+
+```bash
 sum_to_n_a(5) = 15
 sum_to_n_b(5) = 15
 sum_to_n_c(5) = 15
-
-```
-
 ```
