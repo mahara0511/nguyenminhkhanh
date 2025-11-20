@@ -24,3 +24,11 @@ sum_to_n_a(5) = 15
 sum_to_n_b(5) = 15
 sum_to_n_c(5) = 15
 ```
+
+## 4. Performance Evaluation
+
+| Function       | Approach     | Time Complexity | Space Complexity | Notes                                |
+| -------------- | ------------ | --------------- | ---------------- | ------------------------------------ |
+| **sum_to_n_a** | Loop         | O(n)            | O(1)             | Simple, reliable, slower for large n |
+| **sum_to_n_b** | Math formula | O(1)            | O(1)             | Fastest, constant time               |
+| **sum_to_n_c** | Recursion    | O(n)            | O(n)             | Risk of stack overflow for large n   |

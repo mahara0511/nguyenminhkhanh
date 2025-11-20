@@ -1,59 +1,52 @@
 # API
 
-Dự án REST API xây bằng Node.js, Express, TypeORM, Zod, Pino Logger và Swagger UI.  
-Hỗ trợ CRUD sản phẩm, phân trang, tìm kiếm, sắp xếp và trả về dữ liệu qua DTO mapper.
+This project is a REST API built with Node.js, Express, TypeORM, Zod, Pino Logger, and Swagger UI.
+It supports product CRUD operations, pagination, search, sorting, and response mapping via DTOs.
 
-## 1. Cài đặt
+## 1. Installation
 
-Clone project và cài dependencies bằng lệnh:
+Clone the project and install dependencies:
 
 ```bash
 npm install
 ```
 
-## 2. Cấu hình môi trường
+## 2. Environment Configuration
 
-Tạo file .env trong thư mục gốc dự án và điền:
+Create a `.env` file in the project root by copying `example.env` and updating the values as needed.
 
-env
+The project uses Neon PostgreSQL, which requires SSL (`sslmode=require`).
 
-```bash
-DATABASE_URL="postgresql://neondb_owner:npg_T37BfdKcSnCG@ep-sparkling-fire-a10ws6zk.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-PORT=8080
-```
+## 3. Running the Project
 
-Database sử dụng Neon PostgreSQL và yêu cầu SSL (sslmode=require).
-
-## 3. Chạy project
-
-Khởi động server với:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Hoặc chạy bản build:
+Or run the production build:
 
 ```bash
 npm run build
 npm start
 ```
 
-## 4. Migration
+## 4. Migrations
 
-Tạo migration:
+Generate a migration:
 
 ```bash
 npm run migration:generate
 ```
 
-Chạy migration:
+Run migrations:
 
 ```bash
 npm run migration:run
 ```
 
-Revert migration:
+Revert the latest migration:
 
 ```bash
 npm run migration:revert
@@ -61,8 +54,8 @@ npm run migration:revert
 
 ## 5. Swagger API Docs
 
-Sau khi server chạy, mở tài liệu API tại:
+After the server starts, open the API documentation at:
 
-```bash
+```
 http://localhost:8080/docs
 ```
